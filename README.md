@@ -37,6 +37,21 @@ I manually triggered it a few times to see if it's working:
 
 The associated `py` files for my notebooks on databricks are in the `Databricks Notebooks` folder in the repository.
 
+#### Benefits of delta lake:
+Some of the benefits I learned about Delta lake:
+
+- Schema Evolution:
+Supports easy evolution of data schema without complex migration.
+
+Time Travel:
+- Enables querying historical data snapshots for auditing and debugging.
+
+- Optimized Data Compaction:
+Automatically handles data compaction, reducing storage footprint.
+
+- Concurrency Control:
+Manages multiple read and write operations for data consistency.
+
 
 -------------
 
