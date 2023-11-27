@@ -6,13 +6,13 @@ test:
 	python -m pytest -vv --cov=sorc.main
 
 format:	
-	black sorc/*.py 
+	find . -type f -name "*.py" -exec black {} \;
+	find . -type f -name "*.ipynb" -exec nbqa black {} \;
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py sorc/*.py
+	find . -type f -name "*.py" -exec ruff check {} \;
+	find . -type f -name "*.ipynb" -exec nbqa ruff {} \;
 
-container-lint:
-	docker run --rm -i hadolint/hadolint < Dockerfile
 
 refactor: format lint
 
@@ -20,3 +20,11 @@ deploy:
 	#deploy goes here
 		
 all: install lint test format deploy
+
+
+
+
+
+
+
+
