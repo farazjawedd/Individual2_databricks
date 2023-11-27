@@ -1,7 +1,7 @@
 # Databricks ETL pipeline
 [![CI](https://github.com/farazjawedd/python-template-ids706/actions/workflows/cicd.yml/badge.svg)](https://github.com/farazjawedd/python-template-ids706/actions/workflows/cicd.yml)
 
-Demo video:
+Demo video: https://youtu.be/sZw3zFSSMnw
 
 This project demonstrates a Databricks-based ETL pipeline that extracts data, performs transformations using Spark SQL, loads the transformed data into Delta Lake, and visualizes the results. It includes features such as automated triggers and data validation.
 
