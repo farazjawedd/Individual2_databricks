@@ -43,8 +43,8 @@ Some of the benefits I learned about Delta lake:
 - Schema Evolution:
 Supports easy evolution of data schema without complex migration.
 
-Time Travel:
-- Enables querying historical data snapshots for auditing and debugging.
+- Time Travel:
+Enables querying historical data snapshots for auditing and debugging.
 
 - Optimized Data Compaction:
 Automatically handles data compaction, reducing storage footprint.
